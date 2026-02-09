@@ -46,7 +46,7 @@ const LoginPage = () => {
         >
           <Box
             component="img"
-            src="/src/assets/login-image.svg"
+            src="/login-image.svg"
             alt="Login"
             sx={{ width: "70%", maxWidth: 520 }}
           />
