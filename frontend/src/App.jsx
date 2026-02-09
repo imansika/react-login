@@ -1,27 +1,13 @@
-
-
-import React from 'react';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
-import Login from "./pages/Login";
-
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: '#4CAF50',
-    },
-  },
-  typography: {
-    fontFamily: '"Inter", "Roboto", "Helvetica", "Arial", sans-serif',
-  },
-});
+import { Routes, Route } from "react-router-dom";
+import LoginPage from "./pages/Login";
+import HomePage from "./pages/Home.jsx";
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <Login />
-    </ThemeProvider>
+    <Routes>
+      <Route path="/" element={<LoginPage />} />
+      <Route path="/home" element={<HomePage />} />
+    </Routes>
   );
 }
 
